@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 위시리스트</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>✨ 나의 위시리스트 ✨</h1>
+    </header>
+
+    <!-- 위시리스트 입력 모달 부분 수정 -->
+    <div id="addItemModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>새로운 위시 아이템</h2>
+            <select id="category">
+                <option value="패션">패션</option>
+                <option value="전자기기">전자기기</option>
+                <option value="인테리어">인테리어</option>
+                <option value="취미">취미</option>
+            </select>
+            <input type="url" id="itemUrl" placeholder="제품 URL을 입력하세요">
+            <input type="number" id="itemPrice" placeholder="가격을 입력하세요">
+            <div id="preview"></div>
+            <button onclick="addItem()">추가하기</button>
+        </div>
+    </div>
+
+    <!-- 위시리스트 그리드 -->
+    <div class="wishlist-grid" id="wishlistGrid">
+        <!-- 여기에 아이템들이 동적으로 추가됩니 -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
